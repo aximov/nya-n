@@ -9,7 +9,7 @@ pygmentCodeFences = true
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
-publishDir: docs
+publishDir =  "docs"
 
 [Params]
   subtitle = ""
