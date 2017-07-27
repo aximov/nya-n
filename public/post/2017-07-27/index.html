@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>HEASoft を Ubuntu 16.04 にインストール</title>
+  <meta property="og:title" content="HEASoft を Ubuntu 16.04 にインストール" />
+  <meta name="twitter:title" content="HEASoft を Ubuntu 16.04 にインストール" />
+  <meta name="description" content="HEASARC の HEASoft を Ubuntu 16.04 にインストールしました。
+">
+  <meta property="og:description" content="HEASARC の HEASoft を Ubuntu 16.04 にインストールしました。
+">
+  <meta name="twitter:description" content="HEASARC の HEASoft を Ubuntu 16.04 にインストールしました。
+">
+  <meta name="author" content="aximov"/>
+  <link href='https://aximov.github.io/nya-n/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://aximov.github.io/nya-n/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://aximov.github.io/nya-n/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@aximov3" />
+  <meta name="twitter:creator" content="@aximov3" />
+  <meta property="og:url" content="https://aximov.github.io/nya-n/post/2017-07-27/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="nya -n" />
+
+  <meta name="generator" content="Hugo 0.25.1" />
+  <link rel="canonical" href="https://aximov.github.io/nya-n/post/2017-07-27/" />
+  <link rel="alternate" href="https://aximov.github.io/nya-n/index.xml" type="application/rss+xml" title="nya -n">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://aximov.github.io/nya-n/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://aximov.github.io/nya-n/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://aximov.github.io/nya-n/css/highlight.min.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://aximov.github.io/nya-n">nya -n</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/nya-n">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/nya-n/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/nya-n/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="nya -n" href="https://aximov.github.io/nya-n">
+            <img class="avatar-img" src="https://aximov.github.io/nya-n/img/avatar-icon.png" alt="nya -n" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>HEASoft を Ubuntu 16.04 にインストール</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on July 27, 2017
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>HEASARC の HEASoft を Ubuntu 16.04 にインストールしました。
+</p>
+
+<p>HEASARCの<a href="https://heasarc.nasa.gov/lheasoft/install.html">インストールアウトライン</a>と、
+<a href="https://heasarc.nasa.gov/lheasoft/ubuntu.html">Debian 系インストールマニュアル</a>を参考にしました。
+前者のほうが詳細なので基本的にそれを読めばあまり滞りなく進みます。</p>
+
+<p>前提として、操作はすべて bash でおこなっています。</p>
+
+<h2 id="ソースをダウンロード">ソースをダウンロード</h2>
+
+<p>まずはソースをダウンロードします。
+お誂えのバイナリをインストールしてもよいのですが、
+最新のソースを自分でビルドするほうが心配が少ないと思います。</p>
+
+<p><a href="https://heasarc.nasa.gov/lheasoft/download.html">ダウンロードページ</a>で、</p>
+
+<blockquote>
+<p>STEP 1 - Select the type of software:</p>
+
+<p>SOURCE CODE DISTRIBUTION (Recommended):</p>
+</blockquote>
+
+<p>のところで <code>Source Code</code> のラジオボタンにチェックを入れると、
+様々なアーキテクチャのリストが表示されます。
+その中から自分の使いたいプラットフォームのものを選ぶことができます。
+これはソースをダウンロードする上では不要な操作ですが、
+HEASARC 側がユーザ統計をとるために用意しているものです。</p>
+
+<p>全部入りソースをダウンロードするだけならページ上部にある</p>
+
+<blockquote>
+<p>Complete HEASoft source code (all mission &amp; general-use software)</p>
+</blockquote>
+
+<p>というリンクを wget するなどしてダウンロードできます。</p>
+
+<p>圧縮されたソースは2GB程度あるので、回線にもよりますがダウンロードには数時間かかります。
+今回は２時間かかりました。</p>
+
+<h2 id="必要なパッケージをインストール">必要なパッケージをインストール</h2>
+
+<p>ソースをダウンロードしているあいだに、必要なパッケージをインストールしておきます。
+<a href="https://heasarc.nasa.gov/lheasoft/ubuntu.html">Debian 系マニュアル</a>にあるとおり、以下のコマンドでインストールすることができます。</p>
+
+<pre><code class="language-sh">$ sudo apt-get -y install libreadline6-dev
+$ sudo apt-get -y install libncurses5-dev
+$ sudo apt-get -y install xorg-dev
+$ sudo apt-get -y install gcc g++ gfortran
+$ sudo apt-get -y install perl-modules
+$ sudo apt-get -y install python-dev
+</code></pre>
+
+<p>Ubuntu 16.04 の場合、これらのうちのいくつかはすでにインストールされています。</p>
+
+<h2 id="ソースを解凍する">ソースを解凍する</h2>
+
+<p>ソースのダウンロードが終わったら、それを<a href="https://heasarc.nasa.gov/lheasoft/install.html">解凍</a>します。</p>
+
+<pre><code class="language-sh">$ gunzip -c heasoft6.21src.tar.gz | tar xf -
+</code></pre>
+
+<p>全部入りソースの圧縮ファイルをダウンロードした場合は上のようなファイル名です。
+解凍には１分程度かかります。</p>
+
+<h2 id="ビルドの設定をする">ビルドの設定をする</h2>
+
+<p>解凍してできたディレクトリに入ります。</p>
+
+<pre><code class="language-sh">$ cd heasoft-6.21/BUILD_DIR/
+</code></pre>
+
+<p>いまから configure するのですが、<a href="https://heasarc.nasa.gov/lheasoft/ubuntu.html">Debian 系のマニュアル</a>を読むと <code>setenv</code>,<code>export</code>　コマンドでコンパイラのパスを丁寧に環境変数に設定しています。
+この操作は必ずしも必要ではないですが、コンパイラが正常に参照されていないエラーが出た場合や、
+独自にコンパイラを指定したい場合に行います。
+bash では以下のコマンドで行います。
+パスは環境によりますが、マニュアルにある以下のパスはすべて <code>which</code> したときのパスと一致していました。</p>
+
+<pre><code class="language-sh">$ export CC=/usr/bin/gcc
+$ export CXX=/usr/bin/g++
+$ export FC=/usr/bin/gfortran
+$ export PERL=/usr/bin/perl
+$ export PYTHON=/usr/bin/python
+</code></pre>
+
+<p>では設定をします。何もオプションをつけずに実行すると、heasoft は先ほど展開した <code>heasoft-6.21</code> にインストールされます。インストール先は <code>--prefix=インストールしたいディレクトリの絶対パス</code> で指定できます。</p>
+
+<p>今回は <code>/opt/heasarc/heasoft</code> にインストールすることにしました。ツールは
+<code>/usr/local/heasoft</code> などにインストールするのもありだと思いますが、
+<a href="https://ja.wikipedia.org/wiki/Filesystem_Hierarchy_Standard">FHS</a>に準拠するならば <code>/usr/local</code>内にパッケージやベンダーごとのディレクトリを<a href="http://hateda.hatenadiary.jp/entry/2014/02/02/191807">つくるべきではない</a>そうです。</p>
+
+<pre><code class="language-sh">$ ./configure --prefix=/opt/heasarc/heasoft &gt; config.out 2&gt;&amp;1 &amp;
+</code></pre>
+
+<p>これは、 configure が標準出力するログをエラー含めて config.out に書き込んでいます。
+末尾に<code>&amp;</code>がついているので、処理はバックグラウンドで走ります。
+何が起きているか見たい場合は、以下のコマンドで config.out の末尾行を監視できます。</p>
+
+<pre><code class="language-sh">$ tail -f config.out
+</code></pre>
+
+<p><code>tail</code> コマンドは Ctrl+c で終了します。</p>
+
+<p>configure が終わったあとに何かしらのコマンドを実行すると、直後に</p>
+
+<pre><code class="language-sh">[1]   終了                  configure
+</code></pre>
+
+<p>のように表示されます。
+設定が無事に終わったでしょうか？
+config.log の最終行が</p>
+
+<pre><code class="language-log">configure: exit 0
+</code></pre>
+
+<p>であれば正常に終了したことを意味しています。
+0以外で終了した場合は、 多分エラーがあります。
+config.log を読みといて、調べてもわからなければ<a href="https://heasarc.gsfc.nasa.gov/cgi-bin/ftoolshelp">ヘルプ</a>に連絡することになると思います。</p>
+
+<h2 id="ビルドする">ビルドする</h2>
+
+<p>ビルドします。</p>
+
+<pre><code class="language-sh">$ make &gt; build.log 2&gt;&amp;1 &amp;
+</code></pre>
+
+<p>これも先ほどと同様に make の標準出力をログに残しつつバックグラウンドでコンパイルしています。
+<code>tail</code>でログを監視するのも同様にできます。</p>
+
+<p>終わったら、エラーがないかチェックしましょう。</p>
+
+<pre><code class="language-sh">$ grep -G -e &quot;\*\*\*&quot; build.log | less
+</code></pre>
+
+<p>これは、ログ内で<code>***</code>を含む行を<code>less</code>に渡しています。
+<code>less</code>以外にも<code>more</code>など色々と読む手段はあるので好きな方法でやってください。</p>
+
+<p><a href="https://heasarc.nasa.gov/lheasoft/install.html">インストールマニュアル</a>によれば、</p>
+
+<pre><code class="language-log">char ***
+...__PRETTY_FUNCTION__,&quot; ***...
+</code></pre>
+
+<p>という内容に言及したエラーは無視していいそうです。</p>
+
+<h2 id="インストールする">インストールする</h2>
+
+<p>ビルドしたものを設置します。</p>
+
+<p>今回は <code>/opt/heasarc/heasoft</code> にインストールすることにしたので、
+権限的に <code>sudo</code> が必要でした。</p>
+
+<pre><code class="language-sh">$ sudo make install &gt; install.log 2&gt;&amp;1 &amp;
+</code></pre>
+
+<p>終わったら先ほど同様の方法でエラーを確認しましょう。
+無事インストールできたら、インストール先は以下のようなディレクトリ構造になっています。</p>
+
+<pre><code class="language-sh">$ tree -L 1 /opt/heasarc/heasoft/
+/opt/heasarc/heasoft/
+├── Xspec
+├── attitude
+├── demo
+├── ftools
+├── heacore
+├── heagen
+├── heasim
+├── heatools
+├── hitomi
+├── image
+├── integral
+├── nustar
+├── spectral
+├── suzaku
+├── swift
+├── tcltk
+└── x86_64-unknown-linux-gnu-libc2.23
+$ tree -L 1 /opt/heasarc/heasoft/x86_64-unknown-linux-gnu-libc2.23/
+/opt/heasarc/heasoft/x86_64-unknown-linux-gnu-libc2.23/
+├── BUILD_DIR
+├── bin
+├── fguipfiles
+├── headas-init.csh -&gt; BUILD_DIR/headas-init.csh
+├── headas-init.sh -&gt; BUILD_DIR/headas-init.sh
+├── help
+├── include
+├── lib
+├── man
+├── refdata
+├── share
+├── syspfiles
+└── xrdefaults
+</code></pre>
+
+<h2 id="初期化">初期化</h2>
+
+<p>膨大なパスを通してくれるシェルスクリプトを実行します。以下の内容を <code>~/.bashrc</code> に記述します。</p>
+
+<pre><code class="language-sh">HEADAS=/opt/heasarc/heasoft/x86_64-unknown-linux-gnu-libc2.23
+export HEADAS
+alias heainit=&quot;. $HEADAS/headas-init.sh&quot;
+heainit
+</code></pre>
+
+<p>１行目でHEADASという変数にスクリプトがある場所を代入して、
+２行目でそれを環境変数にし、
+3行目では <code>.</code> コマンドによって初期化スクリプトが設定する環境変数をカレントシェルでも使えるようにする、
+という処理をエイリアス <code>heainit</code> に設定しています。</p>
+
+<p>これにより、ログオンしたら <code>heainit</code> を実行すると適切なパスが設定されるようになっています。
+しかしターミナルを起動するたびに必ずコマンドを打つのは不合理なので、
+<code>heainit</code> を実行してくれるよう４行目に書いています。</p>
+
+<h2 id="done">Done</h2>
+
+<p>以上でHEASoftのインストールは終わりです。</p>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://aximov.github.io/nya-n/post/2017-07-23-gentoo/" data-toggle="tooltip" data-placement="top" title="Gentoo のインストールで気をつけたいこと">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/aximov" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/aximov3" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://aximov.github.io/nya-n/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          aximov
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://aximov.github.io/nya-n">nya -n</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.25.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://aximov.github.io/nya-n/js/main.js"></script>
+<script src="https://aximov.github.io/nya-n/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+
+
+  </body>
+</html>
+

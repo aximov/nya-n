@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rsa on nya -n</title>
+    <link>https://aximov.github.io/nya-n/tags/rsa/</link>
+    <description>Recent content in Rsa on nya -n</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Apr 2017 18:57:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://aximov.github.io/nya-n/tags/rsa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH to lab machines with keypairs</title>
+      <link>https://aximov.github.io/nya-n/post/ssh/</link>
+      <pubDate>Fri, 07 Apr 2017 18:57:39 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/nya-n/post/ssh/</guid>
+      <description>&lt;p&gt;For my colleagues.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
