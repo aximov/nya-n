@@ -9,6 +9,8 @@ pygmentCodeFences = true
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
+publishDir: docs
+
 [Params]
   subtitle = ""
   logo = "img/avatar-icon.png"
