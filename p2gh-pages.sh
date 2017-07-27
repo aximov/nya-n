@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 if [[ $(git status -s) ]]
@@ -14,7 +14,7 @@ git worktree prune
 rm -rf .git/worktrees/public/
 
 echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages public upstream/gh-pages
+git worktree add -B gh-pages public origin/gh-pages
 
 echo "Removing existing files"
 rm -rf public/*
