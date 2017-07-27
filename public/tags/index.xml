@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on nya -n</title>
+    <link>https://aximov.github.io/tags/</link>
+    <description>Recent content in Tags on nya -n</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 23 Jul 2017 20:03:04 +0900</lastBuildDate>
+    
+	<atom:link href="https://aximov.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gentoo</title>
+      <link>https://aximov.github.io/tags/gentoo/</link>
+      <pubDate>Sun, 23 Jul 2017 20:03:04 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/gentoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heasarc</title>
+      <link>https://aximov.github.io/tags/heasarc/</link>
+      <pubDate>Thu, 27 Jul 2017 18:23:31 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/heasarc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heasoft</title>
+      <link>https://aximov.github.io/tags/heasoft/</link>
+      <pubDate>Thu, 27 Jul 2017 18:23:31 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/heasoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lab</title>
+      <link>https://aximov.github.io/tags/lab/</link>
+      <pubDate>Fri, 07 Apr 2017 18:57:39 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://aximov.github.io/tags/linux/</link>
+      <pubDate>Sun, 23 Jul 2017 20:03:04 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rsa</title>
+      <link>https://aximov.github.io/tags/rsa/</link>
+      <pubDate>Fri, 07 Apr 2017 18:57:39 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/rsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssh</title>
+      <link>https://aximov.github.io/tags/ssh/</link>
+      <pubDate>Fri, 07 Apr 2017 18:57:39 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://aximov.github.io/tags/ubuntu/</link>
+      <pubDate>Thu, 27 Jul 2017 18:23:31 +0900</pubDate>
+      
+      <guid>https://aximov.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
