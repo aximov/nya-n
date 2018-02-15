@@ -3,95 +3,95 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://aximov.github.io/nya-n/post/2017-07-27/</loc>
+    <loc>https://nya-n.aximov.net/post/2017-07-27/</loc>
     <lastmod>2017-07-27T18:23:31+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/post/2017-07-23-gentoo/</loc>
+    <loc>https://nya-n.aximov.net/post/2017-07-23-gentoo/</loc>
     <lastmod>2017-07-23T20:03:04+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/post/ssh/</loc>
+    <loc>https://nya-n.aximov.net/post/ssh/</loc>
     <lastmod>2017-04-07T18:57:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/</loc>
+    <loc>https://nya-n.aximov.net/</loc>
     <lastmod>2017-07-27T18:23:31+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/page/about/</loc>
+    <loc>https://nya-n.aximov.net/page/about/</loc>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/categories/</loc>
+    <loc>https://nya-n.aximov.net/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/tags/gentoo/</loc>
-    <lastmod>2017-07-23T20:03:04+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aximov.github.io/nya-n/tags/heasarc/</loc>
-    <lastmod>2017-07-27T18:23:31+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aximov.github.io/nya-n/tags/heasoft/</loc>
-    <lastmod>2017-07-27T18:23:31+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aximov.github.io/nya-n/tags/lab/</loc>
-    <lastmod>2017-04-07T18:57:39+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aximov.github.io/nya-n/tags/linux/</loc>
+    <loc>https://nya-n.aximov.net/tags/gentoo/</loc>
     <lastmod>2017-07-23T20:03:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aximov.github.io/nya-n/post/</loc>
+    <loc>https://nya-n.aximov.net/tags/heasarc/</loc>
     <lastmod>2017-07-27T18:23:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/tags/rsa/</loc>
+    <loc>https://nya-n.aximov.net/tags/heasoft/</loc>
+    <lastmod>2017-07-27T18:23:31+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/lab/</loc>
     <lastmod>2017-04-07T18:57:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/tags/ssh/</loc>
-    <lastmod>2017-04-07T18:57:39+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aximov.github.io/nya-n/tags/</loc>
+    <loc>https://nya-n.aximov.net/tags/linux/</loc>
     <lastmod>2017-07-23T20:03:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aximov.github.io/nya-n/tags/ubuntu/</loc>
+    <loc>https://nya-n.aximov.net/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/post/</loc>
+    <lastmod>2017-07-27T18:23:31+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/rsa/</loc>
+    <lastmod>2017-04-07T18:57:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/ssh/</loc>
+    <lastmod>2017-04-07T18:57:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/</loc>
+    <lastmod>2017-07-23T20:03:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/ubuntu/</loc>
     <lastmod>2017-07-27T18:23:31+09:00</lastmod>
     <priority>0</priority>
   </url>
