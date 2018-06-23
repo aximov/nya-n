@@ -5,9 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Heasarc</title>
-  <meta property="og:title" content="Heasarc" />
-  <meta name="twitter:title" content="Heasarc" />
+  <title>持続可能な大学研究室計算機環境を構成した</title>
+  <meta property="og:title" content="持続可能な大学研究室計算機環境を構成した" />
+  <meta name="twitter:title" content="持続可能な大学研究室計算機環境を構成した" />
+  <meta name="description" content="うちの研究室にあるサーバや個々のマシンは，教官と院生によって連綿とメンテされてきました。しかし，ドキュメントがほとんどないため去年は引き継ぎが大変でした。そこで，コマンドを 2,3 回叩くだけでほぼすべてのメンテができ，最低限のドキュメントでも引き継ぎが可能な環境を構成しました。今後，GitLab CI/CD を追加しようと思っています。
+
+">
+  <meta property="og:description" content="うちの研究室にあるサーバや個々のマシンは，教官と院生によって連綿とメンテされてきました。しかし，ドキュメントがほとんどないため去年は引き継ぎが大変でした。そこで，コマンドを 2,3 回叩くだけでほぼすべてのメンテができ，最低限のドキュメントでも引き継ぎが可能な環境を構成しました。今後，GitLab CI/CD を追加しようと思っています。
+
+">
+  <meta name="twitter:description" content="うちの研究室にあるサーバや個々のマシンは，教官と院生によって連綿とメンテされてきました。しかし，ドキュメントがほとんどないため去年は引き継ぎが大変でした。そこで，コマンドを 2,3 回叩くだけでほぼすべてのメンテができ，最低限のドキュメントでも引き継ぎが可能な環境を構成しました。今後，GitLab CI/CD を追加しようと思っています。
+
+">
   <meta name="author" content="aximov"/>
   <link href='https://nya-n.aximov.net/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://nya-n.aximov.net/img/avatar-icon.png" />
@@ -15,12 +24,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@aximov3" />
   <meta name="twitter:creator" content="@aximov3" />
-  <meta property="og:url" content="https://nya-n.aximov.net/tags/heasarc/" />
+  <meta property="og:url" content="https://nya-n.aximov.net/post/2018-06-23/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="nya -n" />
 
   <meta name="generator" content="Hugo 0.42.1" />
-  <link rel="canonical" href="https://nya-n.aximov.net/tags/heasarc/" />
+  <link rel="canonical" href="https://nya-n.aximov.net/post/2018-06-23/" />
   <link rel="alternate" href="https://nya-n.aximov.net/index.xml" type="application/rss+xml" title="nya -n">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -143,14 +152,33 @@
 
 
     
+  
+  
+  
+
+
+
+
+  
+
   <header class="header-section ">
+    
     <div class="intro-header no-img">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>#Heasarc</h1>
-              <hr class="small">
+            <div class="post-heading">
+              <h1>持続可能な大学研究室計算機環境を構成した</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on June 23, 2018
+  
+</span>
+
+
+                
             </div>
           </div>
         </div>
@@ -158,50 +186,63 @@
     </div>
   </header>
 
+
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>うちの研究室にあるサーバや個々のマシンは，教官と院生によって連綿とメンテされてきました。しかし，ドキュメントがほとんどないため去年は引き継ぎが大変でした。そこで，コマンドを 2,3 回叩くだけでほぼすべてのメンテができ，最低限のドキュメントでも引き継ぎが可能な環境を構成しました。今後，GitLab CI/CD を追加しようと思っています。</p>
+
+<p></p>
+
+<h1 id="大学研究室の計算環境">大学研究室の計算環境</h1>
+
+<p>うちは天体物理の研究室で，デスクトップ PC を流用した数台のサーバと，個々の学生が日常的に使うためのデスクトップ PC が 20 台弱ほどあります。ネットワークを構成しているマシンは，これらのなかでサーバと卒研生のマシンで，合わせて 10 台前後と規模としてはそれほど大きくありません。しかし，ドキュメントやスクリプトが十分に用意してあるとはいいがたいものでした。実際，去年にやった引き継ぎではかなりいろいろな苦労をしました。</p>
+
+<p>そこで，最終的に Ansible, Prometheus, Docker, Slack を用いた環境を単一の GitLab.com プライベートリポジトリに構成しました。ちなみに OS は主に Ubuntu です。</p>
+
+<h2 id="ansible">Ansible</h2>
+
+<p>当初の状態ではいちいち人間が 1 台 1 台の面倒を見なければならず，流石にそれはつらかろうということで，まず Ansible で卒研生用のマシンを管理することにしました。ちょうど春に OS を Debian から Ubuntu に入れ替えようという話になったため，OS のインストールと SSH，あと Ansible を使うのに必要なちょっとした設定以外はすべて Ansible でやってみました。</p>
+
+<p>卒研生用のマシンでは既に NIS と NFS が運用されていたため，まずこれらの設定を自動化しました。また NFS と mozc は lockfile まわりで相性が悪いので，それの対応も行いました。他にもたくさんのこまごまとした設定を Ansible Playbook で一括してできるようになりました。</p>
+
+<p>サーバの設定も，すべてではありませんが Ansible での構成を進めています。Ansible は冪等性が大抵の場合あるので，1 回まともな Playbook を書けば誰がどう実行しようとも安心できるのが良いです。</p>
+
+<p>Ansible は，これだけでほぼ完結するくらい便利だと思います。基本的な設定だけでなく，何か追加でやりたくなったときにコマンド一発で情報をとってきたり，何か追加したりできるのはとても楽です。</p>
+
+<h2 id="prometheus">Prometheus</h2>
+
+<p>各マシンの設定が手軽にできるようになったので，次は監視を整えました。最初は Zabbix を試してみましたが，UI が好みではなかったので Prometheus に乗り換えました。Prometheus 自体はメトリクスの収集とアラート発火だけをやってくれるので，可視化に Grafana を，アラート管理と発出に Alertmanager を，実際に人間がアラートを受け取るのには Slack を用いています。</p>
+
+<p>Prometheus, Grafana, Alertmanager はどれも Docker で動かしています。設定ファイルはバインドマウントし，各アプリケーションのデータ永続化は Docker Volume でやっています。Prometheus と Alertmanager の通信は Docker network 内で行われています。これらの設定を docker-compose ファイルに書いておき，運用者が実際にやるのは <code>docker-compose up -d</code> のみです。</p>
+
+<p>Prometheus, Grafana, Alertmanager の組み合わせを使う利点は，設定ファイルを YAML 等で書いておくことで，いつでも設定が再現された環境が実行されるという点だと思います。GUI で設定する必要がないです。（Zabbix もテキストベースで設定する方法がないわけではないです。）</p>
+
+<h2 id="gitlab-com">GitLab.com</h2>
+
+<p>以上の構成をはじめは GitHub のいくつかのリポジトリで管理していましたが，最終的に 1 つの GitLab.com リポジトリに集約しました。 GitLab.com は GitLab 普及を目的としたサービスで，GitLab の基本機能がすべて無料・無制限です。なかでもプライベートグループとプライベートリポジトリが無料・無制限というのが大学の研究室にとって非常にありがたい点です。（ちなみに GitHub も学生ならプライベートリポジトリを無制限につくれますが，引き継ぐことを考えるとオーガニゼーションまで必要です。）</p>
+
+<p>現在の運用では，管制塔となるサーバに人間が入って deploy key を用いていちいち <code>git pull</code> しています。またコードのテストをまったくしていません。GitLab では CI/CD が組み込まれているため，今後は GitLab CI/CD を用いてテストからデプロイ/デリバリーまで自動化したいと考えています。</p>
+      </article>
+
+      <ul class="pager blog-pager">
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://nya-n.aximov.net/post/2017-07-27/">
-                <h2 class="post-title">HEASoft を Ubuntu 16.04 にインストール</h2>
-    
-                
-              </a>
-    
-              <p class="post-meta">
-                Posted on July 27, 2017
-              </p>
-              <div class="post-entry">
-                
-                  <p>HEASARC の HEASoft を Ubuntu 16.04 にインストールしました。
-</p>
-                  <a href="https://nya-n.aximov.net/post/2017-07-27/" class="post-read-more">[Read More]</a>
-                
-              </div>
-    
-              
-                <span class="post-meta">
-                  
-                    #<a href="/tags/ubuntu">ubuntu</a>&nbsp;
-                  
-                    #<a href="/tags/heasoft">heasoft</a>&nbsp;
-                  
-                    #<a href="/tags/heasarc">heasarc</a>&nbsp;
-                  
-                </span>
-              
-    
-            </article>
-          
-        </div>
+          <li class="previous">
+            <a href="https://nya-n.aximov.net/post/2017-07-27/" data-toggle="tooltip" data-placement="top" title="HEASoft を Ubuntu 16.04 にインストール">&larr; Previous Post</a>
+          </li>
         
-      </div>
+        
+      </ul>
+
+      
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">

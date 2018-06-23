@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prometheus on nya -n</title>
+    <link>https://nya-n.aximov.net/tags/prometheus/</link>
+    <description>Recent content in Prometheus on nya -n</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Jun 2018 16:07:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://nya-n.aximov.net/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>持続可能な大学研究室計算機環境を構成した</title>
+      <link>https://nya-n.aximov.net/post/2018-06-23/</link>
+      <pubDate>Sat, 23 Jun 2018 16:07:00 +0900</pubDate>
+      
+      <guid>https://nya-n.aximov.net/post/2018-06-23/</guid>
+      <description>&lt;p&gt;うちの研究室にあるサーバや個々のマシンは，教官と院生によって連綿とメンテされてきました。しかし，ドキュメントがほとんどないため去年は引き継ぎが大変でした。そこで，コマンドを 2,3 回叩くだけでほぼすべてのメンテができ，最低限のドキュメントでも引き継ぎが可能な環境を構成しました。今後，GitLab CI/CD を追加しようと思っています。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

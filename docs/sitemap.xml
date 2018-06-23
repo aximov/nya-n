@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nya-n.aximov.net/post/2018-06-23/</loc>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nya-n.aximov.net/post/2017-07-27/</loc>
     <lastmod>2017-07-27T18:23:31+09:00</lastmod>
   </url>
@@ -19,11 +24,17 @@
   
   <url>
     <loc>https://nya-n.aximov.net/</loc>
-    <lastmod>2017-07-27T18:23:31+09:00</lastmod>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://nya-n.aximov.net/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/ansible/</loc>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -32,8 +43,20 @@
   </url>
   
   <url>
+    <loc>https://nya-n.aximov.net/tags/docker/</loc>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nya-n.aximov.net/tags/gentoo/</loc>
     <lastmod>2017-07-23T20:03:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/gitlab.com/</loc>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,13 +85,25 @@
   </url>
   
   <url>
+    <loc>https://nya-n.aximov.net/tags/nfs/</loc>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nya-n.aximov.net/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nya-n.aximov.net/post/</loc>
-    <lastmod>2017-07-27T18:23:31+09:00</lastmod>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nya-n.aximov.net/tags/prometheus/</loc>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -86,7 +121,7 @@
   
   <url>
     <loc>https://nya-n.aximov.net/tags/</loc>
-    <lastmod>2017-07-23T20:03:04+09:00</lastmod>
+    <lastmod>2018-06-23T16:07:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
